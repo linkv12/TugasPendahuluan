@@ -89,5 +89,5 @@ public class Student {
     s2.display();
     System.out.println("Student 3");
     s3.display();
-}
+    }
 }
