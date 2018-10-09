@@ -1,0 +1,43 @@
+Buatlah kelas Student yang memiliki 4 atribut:
+- name bertipe String
+- studentId bertipe long
+- isMale bertipe Boolean
+- grade bertipe double
+Lakukan enkapsulasi kepada seluruh atribut Student dengan syarat:
+- atribut name tidak boleh di-set kosong
+- atribut studentId memiliki panjang 6 digit
+- atribut isMale secara default bernilai true
+- atribut grade memiliki rentang nilai 0 sampai 4
+Buatlah dua constructor untuk kelas Student:
+- Constructor pertama melakukan inisialisasi pada seluruh atribut Student
+- Constructor kedua melakukan inisialisasi pada seluruh atribut Student kecuali grade
+- Constructor ketiga melakukan inisialisasi pada seluruh atribut Student kecuali isMale
+dan grade
+Buatlah method display() pada kelas Student sebagai berikut (kode silakan disalin):
+
+public void display() {
+  System.out.println("Name: "+name);
+
+  System.out.println("StudentID: "+studentId);
+  if(isMale) {
+    System.out.println("Sex: Male");
+  } else {
+    System.out.println("Sex: Female");
+  }
+  System.out.println("Grade: "+grade);
+}
+
+Buatlah main method pada kelas Student sebagai berikut (kode silakan disalin):
+public static void main(String[] args) {
+    Student s1 = new Student("Max",321032,true,3.7);
+    Student s2 = new Student("Anny",23331,true);
+    Student s3 = new Student("Bobby",22122);
+    System.out.println("Student 1");
+    s1.display();
+    System.out.println("Student 2");
+    s2.display();
+    System.out.println("Student 3");
+    s3.display();
+}
+Jalankan main method tersebut. Pastikan output dari main method sesuai dengan kriteria
+atribut Student!
